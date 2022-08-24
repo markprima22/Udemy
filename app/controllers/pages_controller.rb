@@ -1,5 +1,10 @@
 class PagesController < ApplicationController
   def home
-
+    @language = ['ruby', 'ruby on rails', 'HTML fundamental', 'node.js']
+    @title = 'My Programming language'
+  end
+  def halo
+    @halo = 'Hello everyone, My name is Mark Prima nabil akbar'
+    @skill = ['ruby', 'ruby on rails', 'HTML fundamental', 'node.js']
   end
 end

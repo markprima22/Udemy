@@ -17,11 +17,15 @@
 <ul>
   <li>ruby on rails fundamental</li>
   <li>HTML</li>
-  <li>node.js</li>
 </ul>
 <p> </p>
 <button type="button"onclick="alert('ruby fundamental,' + 'HTML, and ' + 'node.js')">My skill</button>
-<button type="button" onclick="alert('hello, My name is Mark Prima Nabil Akbar.' +
+<button type="button" onclick="alert('Hello, My name is Mark Prima Nabil Akbar.' +
   ' And you can call me Prime')">My Profile</button>
-<p> </p>
+<h1><%= @title %></h1>
+<ul>
+  <% @language.each do |language| %>
+    <li><%= language %></li>
+  <% end %>
+</ul>
 
